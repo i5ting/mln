@@ -45,3 +45,8 @@ mocha
         - minimist
     - supports-color
 ```
+
+处理方式
+
+- 如果不重复，直接建立软链接
+- 如果重复，copy并rename为xxx@0.x.y
