@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/i5ting/mln/issues"
   },
-  "homepage": "https://github.com/i5ting/mln#readme"
+  "homepage": "https://github.com/i5ting/mln#readme",
+  "dependencies": {
+    "lodash": "^3.9.3"
+  }
 }
