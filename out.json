@@ -1,16 +1,61 @@
 {
-    "origin": [
+    "current_path": "/Users/sang/workspace/github/mln",
+    "root_modules": [
+        "./node_modules/bluebird",
+        "./node_modules/chai",
+        "./node_modules/ioredis",
+        "./node_modules/lodash",
+        "./node_modules/mocha",
+        "./node_modules/moment"
+    ],
+    "sub_modules": [
         {
-            "name": "assertion-error",
-            "version": "1.0.0",
-            "path": "./node_modules/chai/node_modules/assertion-error",
-            "desc": "Error constructor for test and validation frameworks that implements standardized AssertionError specification."
+            "name": "bluebird",
+            "version": "2.9.26",
+            "path": "./node_modules/bluebird",
+            "desc": "Full featured Promises/A+ implementation with exceptionally good performance"
+        },
+        {
+            "name": "chai",
+            "version": "2.3.0",
+            "path": "./node_modules/chai",
+            "desc": "BDD/TDD assertion library for node.js and the browser. Test framework agnostic."
+        },
+        {
+            "name": "ioredis",
+            "version": "1.3.6",
+            "path": "./node_modules/ioredis",
+            "desc": "A delightful, performance-focused Redis client for Node and io.js"
+        },
+        {
+            "name": "lodash",
+            "version": "3.9.3",
+            "path": "./node_modules/lodash",
+            "desc": "The modern build of lodash modular utilities."
+        },
+        {
+            "name": "mocha",
+            "version": "2.2.5",
+            "path": "./node_modules/mocha",
+            "desc": "simple, flexible, fun test framework"
+        },
+        {
+            "name": "moment",
+            "version": "2.10.3",
+            "path": "./node_modules/moment",
+            "desc": "Parse, validate, manipulate, and display dates"
         },
         {
             "name": "deep-eql",
             "version": "0.1.3",
             "path": "./node_modules/chai/node_modules/deep-eql",
             "desc": "Improved deep equality testing for Node.js and the browser."
+        },
+        {
+            "name": "assertion-error",
+            "version": "1.0.0",
+            "path": "./node_modules/chai/node_modules/assertion-error",
+            "desc": "Error constructor for test and validation frameworks that implements standardized AssertionError specification."
         },
         {
             "name": "bluebird",
@@ -109,12 +154,6 @@
             "desc": "Tiny ms conversion utility"
         },
         {
-            "name": "minimist",
-            "version": "0.0.8",
-            "path": "./node_modules/mocha/node_modules/mkdirp/node_modules/minimist",
-            "desc": "parse argument options"
-        },
-        {
             "name": "graceful-fs",
             "version": "2.0.3",
             "path": "./node_modules/mocha/node_modules/glob/node_modules/graceful-fs",
@@ -143,6 +182,12 @@
             "version": "0.3.0",
             "path": "./node_modules/mocha/node_modules/jade/node_modules/mkdirp",
             "desc": "Recursively mkdir, like `mkdir -p`"
+        },
+        {
+            "name": "minimist",
+            "version": "0.0.8",
+            "path": "./node_modules/mocha/node_modules/mkdirp/node_modules/minimist",
+            "desc": "parse argument options"
         },
         {
             "name": "lru-cache",

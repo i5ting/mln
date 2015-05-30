@@ -1,23 +1,39 @@
 var dirWalker = require('./lib/dirWalker');
 var fs = require('fs');
 
+
+var file_path = __dirname;
+var current_path = process.cwd();
+
+
 var output = {
-  origin:[]
+  current_path:current_path,
+  root_modules:[],
+  sub_modules:[]
 };
 
 
+
+var all = fs.readdirSync('./node_modules');
+for(var i in all){
+  var path = all[i];
+  if(path === '.bin' || path === ".DS_Store"){
+     
+  }else{
+    var p = './node_modules/' + path;
+    output.root_modules.push(p);
+  }
+}
+
 function handleFile(path, floor) {
-	var blankStr = '';
-	for (var i = 0; i < floor; i++) {
-		blankStr += '    ';
-	}
   // console.log(floor)
-  if(floor ==1){
+  // if(floor ==1){
+//     return;
+//   }
+  if(!path.match(/node_modules$/)){  
     return;
   }
-  if(!path.match(/node_modules$/)){
-    return;
-  }
+  
   
   // console.log(path)
 	fs.stat(path, function(err1, stats) {
@@ -50,7 +66,7 @@ function handleFile(path, floor) {
           var package_description = require(packagejson).description;
           console.log('version = ' + package_version);
           
-          output.origin.push({
+          output.sub_modules.push({
             name    :name,
             version :package_version,
             path    :p,
