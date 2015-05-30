@@ -50,3 +50,12 @@ mocha
 
 - 如果不重复，直接建立软链接
 - 如果重复，copy并rename为xxx@0.x.y
+
+
+## cli
+
+
+- mln g (生成json)
+- mln s（启动webserver界面，点选模块）
+- mln a (generate symlink in node_modules directory)
+
