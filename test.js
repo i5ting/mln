@@ -76,10 +76,10 @@ function handleFile(path, floor) {
           var c = JSON.stringify(output, null, 4);
           fs.writeFileSync('./out.json', c);
           //
-          // fs.symlink(srcpath, dstpath, function (err, resolvedPath) {
-          //   if (err) throw err;
-          //   console.log(resolvedPath);
-          // });
+          fs.symlink(srcpath, dstpath, function (err, resolvedPath) {
+            if (err) throw err;
+            console.log(resolvedPath);
+          });
           
         })
         
