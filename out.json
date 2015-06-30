@@ -7,8 +7,7 @@
         "/Users/sang/workspace/github/mln/node_modules/ioredis",
         "/Users/sang/workspace/github/mln/node_modules/lodash",
         "/Users/sang/workspace/github/mln/node_modules/mocha",
-        "/Users/sang/workspace/github/mln/node_modules/moment",
-        "/Users/sang/workspace/github/mln/node_modules/symlink-or-copy"
+        "/Users/sang/workspace/github/mln/node_modules/moment"
     ],
     "sub_modules": [
         {
@@ -54,22 +53,166 @@
             "desc": "Parse, validate, manipulate, and display dates"
         },
         {
-            "name": "symlink-or-copy",
-            "version": "1.0.1",
-            "path": "./node_modules/symlink-or-copy",
-            "desc": "Symlink files or directories, falling back to copying on Windows"
-        },
-        {
             "name": "assertion-error",
             "version": "1.0.0",
-            "path": "./node_modules/chai/node_modules/assertion-error",
+            "path": "./test_node_modules/assertion-error",
             "desc": "Error constructor for test and validation frameworks that implements standardized AssertionError specification."
+        },
+        {
+            "name": "bluebird",
+            "version": "2.9.25",
+            "path": "./test_node_modules/bluebird",
+            "desc": "Full featured Promises/A+ implementation with exceptionally good performance"
+        },
+        {
+            "name": "commander",
+            "version": "0.6.1",
+            "path": "./test_node_modules/commander",
+            "desc": "the complete solution for node.js command-line programs"
+        },
+        {
+            "name": "debug",
+            "version": "2.2.0",
+            "path": "./test_node_modules/debug",
+            "desc": "small debugging utility"
         },
         {
             "name": "deep-eql",
             "version": "0.1.3",
-            "path": "./node_modules/chai/node_modules/deep-eql",
+            "path": "./test_node_modules/deep-eql",
             "desc": "Improved deep equality testing for Node.js and the browser."
+        },
+        {
+            "name": "escape-string-regexp",
+            "version": "1.0.2",
+            "path": "./test_node_modules/escape-string-regexp",
+            "desc": "Escape RegExp special characters"
+        },
+        {
+            "name": "diff",
+            "version": "1.4.0",
+            "path": "./test_node_modules/diff",
+            "desc": "A javascript text diff implementation."
+        },
+        {
+            "name": "flexbuffer",
+            "version": "0.0.6",
+            "path": "./test_node_modules/flexbuffer",
+            "desc": "Buffer optimized"
+        },
+        {
+            "name": "glob",
+            "version": "3.2.3",
+            "path": "./test_node_modules/glob",
+            "desc": "a little globber"
+        },
+        {
+            "name": "growl",
+            "version": "1.8.1",
+            "path": "./test_node_modules/growl",
+            "desc": "Growl unobtrusive notifications"
+        },
+        {
+            "name": "graceful-fs",
+            "version": "2.0.3",
+            "path": "./test_node_modules/graceful-fs",
+            "desc": "A drop-in replacement for fs, making various improvements."
+        },
+        {
+            "name": "inherits",
+            "version": "2.0.1",
+            "path": "./test_node_modules/inherits",
+            "desc": "Browser-friendly inheritance fully compatible with standard node.js inherits()"
+        },
+        {
+            "name": "jade",
+            "version": "0.26.3",
+            "path": "./test_node_modules/jade",
+            "desc": "Jade template engine"
+        },
+        {
+            "name": "lodash",
+            "version": "3.9.2",
+            "path": "./test_node_modules/lodash",
+            "desc": "The modern build of lodash modular utilities."
+        },
+        {
+            "name": "lru-cache",
+            "version": "2.6.4",
+            "path": "./test_node_modules/lru-cache",
+            "desc": "A cache object that deletes the least-recently-used items."
+        },
+        {
+            "name": "minimatch",
+            "version": "0.2.14",
+            "path": "./test_node_modules/minimatch",
+            "desc": "a glob matcher in javascript"
+        },
+        {
+            "name": "minimist",
+            "version": "0.0.8",
+            "path": "./test_node_modules/minimist",
+            "desc": "parse argument options"
+        },
+        {
+            "name": "mkdirp",
+            "version": "0.3.0",
+            "path": "./test_node_modules/mkdirp",
+            "desc": "Recursively mkdir, like `mkdir -p`"
+        },
+        {
+            "name": "mkdirp-then",
+            "version": "1.0.1",
+            "path": "./test_node_modules/mkdirp-then",
+            "desc": "mkdirp as promised"
+        },
+        {
+            "name": "ms",
+            "version": "0.7.1",
+            "path": "./test_node_modules/ms",
+            "desc": "Tiny ms conversion utility"
+        },
+        {
+            "name": "mz",
+            "version": "2.0.0",
+            "path": "./test_node_modules/mz",
+            "desc": "modernize node.js to current ECMAScript standards"
+        },
+        {
+            "name": "native-or-bluebird",
+            "version": "1.2.0",
+            "path": "./test_node_modules/native-or-bluebird",
+            "desc": "use either the native Promise or Bluebird"
+        },
+        {
+            "name": "sigmund",
+            "version": "1.0.1",
+            "path": "./test_node_modules/sigmund",
+            "desc": "Quick and dirty signatures for Objects."
+        },
+        {
+            "name": "supports-color",
+            "version": "1.2.1",
+            "path": "./test_node_modules/supports-color",
+            "desc": "Detect whether a terminal supports color"
+        },
+        {
+            "name": "thenify",
+            "version": "3.1.0",
+            "path": "./test_node_modules/thenify",
+            "desc": "Promisify a callback-based function"
+        },
+        {
+            "name": "thenify-all",
+            "version": "1.6.0",
+            "path": "./test_node_modules/thenify-all",
+            "desc": "Promisifies all the selected functions in an object"
+        },
+        {
+            "name": "type-detect",
+            "version": "0.1.1",
+            "path": "./test_node_modules/type-detect",
+            "desc": "Improved typeof detection for node.js and the browser."
         },
         {
             "name": "mkdirp",
@@ -112,12 +255,6 @@
             "version": "3.9.2",
             "path": "./node_modules/ioredis/node_modules/lodash",
             "desc": "The modern build of lodash modular utilities."
-        },
-        {
-            "name": "copy-dereference",
-            "version": "1.0.0",
-            "path": "./node_modules/symlink-or-copy/node_modules/copy-dereference",
-            "desc": "Copy files and directories, dereferencing symlinks and preserving last-modified times"
         },
         {
             "name": "commander",
@@ -174,22 +311,106 @@
             "desc": "Detect whether a terminal supports color"
         },
         {
+            "name": "assertion-error",
+            "version": "1.0.0",
+            "path": "./node_modules/chai/node_modules/assertion-error",
+            "desc": "Error constructor for test and validation frameworks that implements standardized AssertionError specification."
+        },
+        {
+            "name": "deep-eql",
+            "version": "0.1.3",
+            "path": "./node_modules/chai/node_modules/deep-eql",
+            "desc": "Improved deep equality testing for Node.js and the browser."
+        },
+        {
             "name": "type-detect",
             "version": "0.1.1",
-            "path": "./node_modules/chai/node_modules/deep-eql/node_modules/type-detect",
+            "path": "./test_node_modules/deep-eql/node_modules/type-detect",
             "desc": "Improved typeof detection for node.js and the browser."
         },
         {
-            "name": "minimist",
-            "version": "0.0.8",
-            "path": "./node_modules/fs-symlink/node_modules/mkdirp/node_modules/minimist",
-            "desc": "parse argument options"
+            "name": "graceful-fs",
+            "version": "2.0.3",
+            "path": "./test_node_modules/glob/node_modules/graceful-fs",
+            "desc": "A drop-in replacement for fs, making various improvements."
+        },
+        {
+            "name": "inherits",
+            "version": "2.0.1",
+            "path": "./test_node_modules/glob/node_modules/inherits",
+            "desc": "Browser-friendly inheritance fully compatible with standard node.js inherits()"
+        },
+        {
+            "name": "minimatch",
+            "version": "0.2.14",
+            "path": "./test_node_modules/glob/node_modules/minimatch",
+            "desc": "a glob matcher in javascript"
+        },
+        {
+            "name": "commander",
+            "version": "0.6.1",
+            "path": "./test_node_modules/jade/node_modules/commander",
+            "desc": "the complete solution for node.js command-line programs"
+        },
+        {
+            "name": "mkdirp",
+            "version": "0.3.0",
+            "path": "./test_node_modules/jade/node_modules/mkdirp",
+            "desc": "Recursively mkdir, like `mkdir -p`"
+        },
+        {
+            "name": "ms",
+            "version": "0.7.1",
+            "path": "./test_node_modules/debug/node_modules/ms",
+            "desc": "Tiny ms conversion utility"
+        },
+        {
+            "name": "lru-cache",
+            "version": "2.6.4",
+            "path": "./test_node_modules/minimatch/node_modules/lru-cache",
+            "desc": "A cache object that deletes the least-recently-used items."
+        },
+        {
+            "name": "sigmund",
+            "version": "1.0.1",
+            "path": "./test_node_modules/minimatch/node_modules/sigmund",
+            "desc": "Quick and dirty signatures for Objects."
+        },
+        {
+            "name": "native-or-bluebird",
+            "version": "1.2.0",
+            "path": "./test_node_modules/mkdirp-then/node_modules/native-or-bluebird",
+            "desc": "use either the native Promise or Bluebird"
+        },
+        {
+            "name": "native-or-bluebird",
+            "version": "1.2.0",
+            "path": "./test_node_modules/mz/node_modules/native-or-bluebird",
+            "desc": "use either the native Promise or Bluebird"
+        },
+        {
+            "name": "thenify-all",
+            "version": "1.6.0",
+            "path": "./test_node_modules/mz/node_modules/thenify-all",
+            "desc": "Promisifies all the selected functions in an object"
+        },
+        {
+            "name": "thenify",
+            "version": "3.1.0",
+            "path": "./test_node_modules/thenify-all/node_modules/thenify",
+            "desc": "Promisify a callback-based function"
         },
         {
             "name": "native-or-bluebird",
             "version": "1.2.0",
             "path": "./node_modules/fs-symlink/node_modules/mkdirp-then/node_modules/native-or-bluebird",
             "desc": "use either the native Promise or Bluebird"
+        },
+        {
+            "name": "minimist",
+            "version": "0.0.8",
+            "path": "./node_modules/fs-symlink/node_modules/mkdirp/node_modules/minimist",
+            "desc": "parse argument options"
         },
         {
             "name": "native-or-bluebird",
@@ -252,22 +473,46 @@
             "desc": "parse argument options"
         },
         {
+            "name": "type-detect",
+            "version": "0.1.1",
+            "path": "./node_modules/chai/node_modules/deep-eql/node_modules/type-detect",
+            "desc": "Improved typeof detection for node.js and the browser."
+        },
+        {
+            "name": "sigmund",
+            "version": "1.0.1",
+            "path": "./test_node_modules/glob/node_modules/minimatch/node_modules/sigmund",
+            "desc": "Quick and dirty signatures for Objects."
+        },
+        {
+            "name": "lru-cache",
+            "version": "2.6.4",
+            "path": "./test_node_modules/glob/node_modules/minimatch/node_modules/lru-cache",
+            "desc": "A cache object that deletes the least-recently-used items."
+        },
+        {
+            "name": "thenify",
+            "version": "3.1.0",
+            "path": "./test_node_modules/mz/node_modules/thenify-all/node_modules/thenify",
+            "desc": "Promisify a callback-based function"
+        },
+        {
             "name": "thenify",
             "version": "3.1.0",
             "path": "./node_modules/fs-symlink/node_modules/mz/node_modules/thenify-all/node_modules/thenify",
             "desc": "Promisify a callback-based function"
         },
         {
-            "name": "lru-cache",
-            "version": "2.6.4",
-            "path": "./node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache",
-            "desc": "A cache object that deletes the least-recently-used items."
-        },
-        {
             "name": "sigmund",
             "version": "1.0.1",
             "path": "./node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund",
             "desc": "Quick and dirty signatures for Objects."
+        },
+        {
+            "name": "lru-cache",
+            "version": "2.6.4",
+            "path": "./node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache",
+            "desc": "A cache object that deletes the least-recently-used items."
         }
     ]
 }

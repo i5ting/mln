@@ -92,7 +92,7 @@ function handleFile(path, floor) {
           
           var file_name = d.split('/').pop();
           
-          link(d, 'test_node_modules/' + file_name,  'junction').then(function () {
+          link(d, 'node_modules/' + file_name,  'junction').then(function () {
            console.log('finished')
           })
           

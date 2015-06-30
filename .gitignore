@@ -26,3 +26,31 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 # node_modules
 test_node_modules
+
+tmp
+
+node_modules/assertion-error
+node_modules/commander
+node_modules/debug
+node_modules/deep-eql
+node_modules/diff
+node_modules/escape-string-regexp
+node_modules/flexbuffer
+node_modules/glob
+node_modules/graceful-fs
+node_modules/growl
+node_modules/inherits
+node_modules/jade
+node_modules/lru-cache
+node_modules/minimatch
+node_modules/minimist
+node_modules/mkdirp
+node_modules/mkdirp-then
+node_modules/ms
+node_modules/mz
+node_modules/native-or-bluebird
+node_modules/sigmund
+node_modules/supports-color
+node_modules/thenify
+node_modules/thenify-all
+node_modules/type-detect
