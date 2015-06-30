@@ -1,6 +1,6 @@
 var dirWalker = require('./lib/dirWalker');
 var fs = require('fs');
-
+var link = require('fs-symlink')
 
 var file_path = __dirname;
 var current_path = process.cwd();
@@ -20,7 +20,7 @@ for(var i in all){
   if(path === '.bin' || path === ".DS_Store"){
      
   }else{
-    var p = './node_modules/' + path;
+    var p = current_path + '/node_modules/' + path;
     output.root_modules.push(p);
   }
 }
@@ -76,10 +76,25 @@ function handleFile(path, floor) {
           var c = JSON.stringify(output, null, 4);
           fs.writeFileSync('./out.json', c);
           //
-          fs.symlink(srcpath, dstpath, function (err, resolvedPath) {
-            if (err) throw err;
-            console.log(resolvedPath);
-          });
+          var a = dstpath.replace(/.\//,'');
+          var b = srcpath.replace(/.\//,'');
+      
+            var s = current_path + '/' + a;
+            var d = current_path + '/' + b
+            
+          console.log(s)
+          console.log(d)
+            
+          // fs.symlink( d, s, 'junction', function (err, resolvedPath) {
+          //   if (err) console.dir(err);
+          //   console.log(resolvedPath);
+          // });
+          
+          var file_name = d.split('/').pop();
+          
+          link(d, 'test_node_modules/' + file_name,  'junction').then(function () {
+           console.log('finished')
+          })
           
         })
         
