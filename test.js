@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var dirWalker = require('./lib/dirWalker');
 var fs = require('fs');
 var link = require('fs-symlink')
@@ -62,39 +64,45 @@ function handleFile(path, floor) {
           
           var packagejson = p + "/package.json"
           
-          var package_version = require(packagejson).version;
-          var package_description = require(packagejson).description;
-          console.log('version = ' + package_version);
           
-          output.sub_modules.push({
-            name    :name,
-            version :package_version,
-            path    :p,
-            desc    :package_description
-          })
+          try{
+            var package_version = require(packagejson).version;
+            var package_description = require(packagejson).description;
+            console.log('version = ' + package_version);
           
-          var c = JSON.stringify(output, null, 4);
-          fs.writeFileSync('./out.json', c);
-          //
-          var a = dstpath.replace(/.\//,'');
-          var b = srcpath.replace(/.\//,'');
+            output.sub_modules.push({
+              name    :name,
+              version :package_version,
+              path    :p,
+              desc    :package_description
+            })
+          
+            var c = JSON.stringify(output, null, 4);
+            fs.writeFileSync('./out.json', c);
+            //
+            var a = dstpath.replace(/.\//,'');
+            var b = srcpath.replace(/.\//,'');
       
-            var s = current_path + '/' + a;
-            var d = current_path + '/' + b
+              var s = current_path + '/' + a;
+              var d = current_path + '/' + b
             
-          console.log(s)
-          console.log(d)
+            console.log(s)
+            console.log(d)
             
-          // fs.symlink( d, s, 'junction', function (err, resolvedPath) {
-          //   if (err) console.dir(err);
-          //   console.log(resolvedPath);
-          // });
+            // fs.symlink( d, s, 'junction', function (err, resolvedPath) {
+            //   if (err) console.dir(err);
+            //   console.log(resolvedPath);
+            // });
           
-          var file_name = d.split('/').pop();
+            var file_name = d.split('/').pop();
           
-          link(d, 'node_modules/' + file_name,  'junction').then(function () {
-           console.log('finished')
-          })
+            link(d, 'node_modules/' + file_name,  'junction').then(function () {
+             console.log('finished')
+            })
+          }catch (e) {
+            
+          }
+       
           
         })
         
